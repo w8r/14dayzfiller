@@ -13,5 +13,3 @@ javascript:(function(){var d=document,s=d.createElement('script');s.src='https:/
 
 + go to your timesheet page
 + press on a link in your bookmarks bar
-
-<a href="javascript:(function(){var d=document,s=d.createElement('script');s.src='https://rawgit.com/w8r/14dayzfiller/master/dist/14dayz.min.js';d.body.appendChild(s);}()))">Link</a>
