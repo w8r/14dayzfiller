@@ -53,14 +53,11 @@ overlay.innerHTML = '<h2>' +
     select = select.cloneNode(true);
     select.setAttribute('name', 'projectId');
     projPlaceholder.appendChild(select);
-    select.removeChild(select.querySelector('option'));
 
     select = document.querySelector('.tsRegelTr .projectenTitel[name^=categorieId]');
     select = select.cloneNode(true);
     select.setAttribute('name', 'catId');
     catPlaceholder.appendChild(select);
-    select.value = 499117;
-    select.selectedIndex = 17;
 })(overlay.querySelector('#hack-proj-select-placeholder'),
     overlay.querySelector('#hack-cat-select-placeholder'));
 
@@ -119,7 +116,7 @@ form.addEventListener('submit', function(evt) {
 
     function post() {
         progress.innerHTML = data.length > 0 ?
-            (((total - data.length) / total) * 100 + '%') : '100%';
+            ((((total - data.length) / total) * 100).toFixed(2) + '%') : '100%';
         var requestData = data.pop();
         if (!requestData) return;
         reqwest({
