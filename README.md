@@ -16,9 +16,9 @@ Doing repetitive work in 14 dayz?
 
 + install the bookmarklet by dragging this code to your bookmarks bar
 
-`
+```js
 javascript:(function(){var d=document,s=d.createElement('script');s.src='https://cdn.rawgit.com/w8r/14dayz/dist/14dayz.min.js';d.body.appendChild(s);}()))
-`
+```
 
 + go to your timesheet page
 + press on a link in your bookmarks bar
