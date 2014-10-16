@@ -1,0 +1,30 @@
+{
+    "name": "14dayz",
+    "version": "1.0.0",
+    "description": "14dayz bookmarklet",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "watchify index.js -o dist/14dayz.js -dv & serve -p 3033",
+        "build": "browserify index.js | uglifyjs -m > dist/14dayz.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/w8r/14dayz.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/w8r/14dayz/issues"
+    },
+    "homepage": "https://github.com/w8r/14dayz",
+    "devDependencies": {
+        "browserify": "^6.1.0",
+        "serve": "^1.4.0",
+        "uglify-js": "^2.4.15",
+        "watchify": "^2.0.0"
+    },
+    "dependencies": {
+        "reqwest": "git://github.com/ded/reqwest"
+    }
+}
