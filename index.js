@@ -91,7 +91,7 @@ form.addEventListener('submit', function(evt) {
     }
 
     for (var i = 0; i < days; i++) {
-        date.setDate(dateStart.getDate() + i);
+        date.setDate(date.getDate() + 1);
         var day = date.getDay();
 
         // sat, su
