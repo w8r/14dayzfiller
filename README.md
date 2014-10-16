@@ -1,4 +1,4 @@
-14dayz_troller
+14dayz filler
 ==============
 
 Automatically fill in date ranges in 14dayz. For thouse who believes in time-tracking
@@ -13,3 +13,5 @@ javascript:(function(){var d=document,s=d.createElement('script');s.src='https:/
 
 + go to your timesheet page
 + press on a link in your bookmarks bar
+
+<a href="javascript:(function(){var d=document,s=d.createElement('script');s.src='https://rawgit.com/w8r/14dayzfiller/master/dist/14dayz.min.js';d.body.appendChild(s);}()))">Link</a>
