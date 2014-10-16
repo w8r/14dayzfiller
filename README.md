@@ -1,7 +1,7 @@
 14dayz filler
 ==============
 
-Automatically fill in date ranges in 14dayz. For thouse who believes in time-tracking
+Automatically fill in date ranges in 14dayz. For those who believes in time-tracking
 
 ### Bookmarklet(no install needed)
 
