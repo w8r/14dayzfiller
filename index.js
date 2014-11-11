@@ -4,8 +4,11 @@ var reqwest = require('reqwest');
 
 var input = document.querySelector("#employeeForm input[name='medewerker']");
 if (!input) {
-    alert('Go to the timesheet page so the script could get your details');
-    return;
+    input = document.querySelector("#employeeForm select[name='medewerker']");
+    if (!input) {
+        alert('Go to the timesheet page so the script could get your details');
+        return;
+    }
 }
 
 var userId = input.value,
